@@ -33,7 +33,7 @@ cd ktor-todo
 
 ## API Reference
 
-#### Get all items
+#### Get all todos
 
 ```
   GET /todos
