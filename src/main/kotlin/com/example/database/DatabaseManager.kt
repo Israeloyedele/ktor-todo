@@ -41,8 +41,6 @@ class DatabaseManager {
         return ToDo(generatedId, input.title, input.body, input.done)
     }
     fun updateToDo(id: Int, input: ToDoInput): Boolean{
-//        val todoToUpdate = getToDo(id)?.let { ToDo(it.id, it.title, it.body, it.done) }
-//        val inputTitle = todoToUpdate?.title
         val updatedRows = database.update(DBTodoTable){
             set(DBTodoTable.title, input.title)
             set(DBTodoTable.body, input.body)
